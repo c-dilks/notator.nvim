@@ -8,12 +8,12 @@ Default keybindings:
 
 | Key         | Action                                        |
 | ---         | ---                                           |
-| `<Leader>0` | add a tag (the first one)                     |
-| `<Leader>9` | remove a tag                                  |
-| `<Leader>8` | move the cursor to the first word in the line |
 | `<Leader>1` | change to the 1st tag                         |
 | `<Leader>2` | change to the 2nd tag                         |
 | `<Leader>3` | change to the 3rd tag                         |
+| `<Leader>0` | add a tag (the 1st one)                       |
+| `<Leader>9` | remove a tag                                  |
+| `<Leader>8` | move the cursor to the first word in the line |
 
 You may define as many tags as you want; the defaults are:
 ```
@@ -47,9 +47,9 @@ require('notator').setup({
 
 `tag_table` accepts the following optional `string` properties:
 
-| Property | Description                                                                           |
-| ---      | ---                                                                                   |
-| name     | the name of the tag; it's best to use all-caps                                        |
-| color    | the color of the tag                                                                  |
-| style    | the style of the tag (e.g., `'bold'`)                                                 |
-| key      | custom keybinding; by default it is '<Leader>' + the index of this tag in `tag_table` |
+| Property | Description                                                                             |
+| ---      | ---                                                                                     |
+| name     | the name of the tag; it's best to use all-caps                                          |
+| color    | the color of the tag                                                                    |
+| style    | the style of the tag (e.g., `'bold'`)                                                   |
+| key      | custom keybinding; by default it is `'<Leader>'` + the index of this tag in `tag_table` |
