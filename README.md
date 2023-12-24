@@ -43,7 +43,7 @@ require('notator').setup({
   }
 })
 ```
-- `lazy.nvim` users may set these options with the `opts` table in the plugin spec.
+- [`lazy.nvim`](https://github.com/folke/lazy.nvim) users may set these options with the `opts` table in the plugin spec.
 
 `tag_table` accepts the following optional `string` properties:
 
