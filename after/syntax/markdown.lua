@@ -1,3 +1,4 @@
+vim.cmd([[syntax case match]])
 for _, tag in ipairs(require('notator').config.tag_table) do
   vim.cmd([[highlight]]
   .. [[ hi_]]      .. tag.name
@@ -10,3 +11,4 @@ for _, tag in ipairs(require('notator').config.tag_table) do
   .. [[ ]]    .. tag.name
   )
 end
+vim.cmd([[syntax case ignore]])
